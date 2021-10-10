@@ -76,7 +76,7 @@ func main() {
 			ratio := (greyscale * (a/65535))
 			// multiply the ratio by ASCII map length to get required char
 			shade := (length * ratio) / 65535
-			// print the ASCII value to the console
+			// convert ASCII decimal value to string
 			char := string(opacity[shade])
 			// double character to scale image correctly
 			text += char + char
